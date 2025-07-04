@@ -216,3 +216,15 @@ SELECT
 FROM hourly_sales
 GROUP BY shift;
 ```
+
+### 4. Findings
+
+- **Customer Demographics**: The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
+- **High-Value Transactions**: Several transactions had a total sale amount greater than 1000, indicating premium purchases.
+- **Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
+- **Customer Insights**: The analysis identifies the top-spending customers and the most popular product categories.
+
+## Conclusion
+
+This is a basic SQL Data Analysis comprising of database setup, data cleaning, exploratory data analytics(EDA) and business-driven SQL queries. Findings from this projects will help solve the business problems and data driven decision making.
+
