@@ -131,7 +131,7 @@ ORDER BY sale_date;
 SELECT 
 	category,
 	SUM(total_sale) AS sales,
-    COUNT(*) AS total_orders
+    	COUNT(*) AS total_orders
 FROM retailsales
 GROUP BY category;
 ```
@@ -158,8 +158,8 @@ WHERE total_sale > 1000;
 ```sql
 SELECT 
 	gender,
-    category,
-    COUNT(*)
+    	category,
+    	COUNT(*)
 FROM retailsales  
 GROUP BY gender,category
 ORDER BY gender;
@@ -171,8 +171,8 @@ ORDER BY gender;
 ```sql
 SELECT 
 	year,
-    month,
-    avg_sale
+    	month,
+    	avg_sale
 FROM
 (
 SELECT 
@@ -205,7 +205,7 @@ LIMIT 5;
 ```sql
 SELECT 
 	COUNT(DISTINCT customer_id) AS unique_cust,
-    category
+    	category
 FROM retailsales
 GROUP BY category
 ORDER BY unique_cust DESC;
@@ -228,7 +228,7 @@ FROM retailsales
 )
 SELECT 
 	shift,
-    COUNT(*) AS total_orders
+    	COUNT(*) AS total_orders
 FROM hourly_sales
 GROUP BY shift;
 ```
